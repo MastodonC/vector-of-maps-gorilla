@@ -10,6 +10,18 @@ Add
 Gorilla REPL's [getting started](http://gorilla-repl.org/start.html) page for help with installing Gorilla).
 You can then `(use 'vector-of-maps-gorilla.render)` in your Gorilla worksheets.
 
+In your file: if you have a vector of maps:
+
+```
+(table-view [{:a 1 :b 2}{:a 3 :b 4}])
+```
+
+There is an optional last parameter for options.  Current options: `cols`, to explicitly name (and order) the columns we want to use, and `nrows`, to have a different number than the 10 default rows.
+
+```
+(table-view [{:a 1 :b 2}{:a 3 :b 4}] {:cols [:a] :nrows 15)
+```
+
+Caveats: if you have unusual types in your map (as in not primitives), you might have to define the rendering for them your code - they need to implement the Renderable interface from [gorilla-renderable](https://github.com/JonyEpsilon/gorilla-renderable).
+
 Copyright © 2017- Elise Huard
-
-
