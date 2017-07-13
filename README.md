@@ -1,6 +1,6 @@
-# core-matrix-gorilla
-
-[core.matrix](https://github.com/mikera/core.matrix) integration with [Gorilla REPL](http://gorilla-repl.org) that enables us to view core.matrix datasets as HTML tables in Gorilla-repl worksheets.
+# vector-of-maps gorilla
+just want to be able to display my vector of maps in a nice tabular format.
+Based on core-matrix-gorilla (developed by Kiran Karkera)
 
 ## Usage
 
@@ -10,14 +10,6 @@ Add
 Gorilla REPL's [getting started](http://gorilla-repl.org/start.html) page for help with installing Gorilla).
 You can then `(use 'core-matrix-gorilla.render)` in your Gorilla worksheets.
 
-## Example worksheet
-
-You can see an example Gorilla worksheet [here](http://viewer.gorilla-repl.org/view.html?source=github&user=shark8me&repo=clojure-machinelearning-cookbook&path=core.matrix-gorilla/ws/coremat.cljw)
-
-## License
-
-This code is licensed to you under the MIT licence. See LICENCE.txt for details.
-
-Copyright © 2016- Kiran Karkera 
+Copyright © 2017- Elise Huard
 
 
