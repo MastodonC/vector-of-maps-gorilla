@@ -22,7 +22,7 @@
                            flatten
                            set)
          columns (if cols
-                   (clojure.set/intersection (set cols) column-names)
+                   (filter #(some #{%} column-names) cols)
                    column-names)
          rendfn (fn [open close sep r] (list-like (map render/render r) (pr-str r) open close sep))
          rows (map (partial rendfn "<tr><td>" "</td></tr>" "</td><td>")
